@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HW 9</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <div class="blank_Div"></div>
+        <h1><a class="nav-link" href="./index.html" style="color:white">Latitude</a></h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto"></ul>
+            <div class="navbar-nav my-0 my-lg-0">
+                <li class="nav-item">
+
+                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+
+                        <a class="nav-link" href="#">Plots</a>
+
+                        <div class="btn-group" role="group">
+                            <button id="btnGroupDrop1" type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false"></button>
+                            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 40px, 0px);">
+                                <a class="dropdown-item" href="./Max_Temperature.html">Max Temperature</a>
+                                <a class="dropdown-item" href="./Humidity.html">Humidity</a>
+                                <a class="dropdown-item" href="./Cloudiness.html">Cloudiness</a>
+                                <a class="dropdown-item" href="./Wind_Speed.html">Wind Speed</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./cities_excel.html">Data</a>
+                </li>
+            </div>
+            <div class="blank_Div"></div>
+        </div>
+    </nav>
+
+
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-sm-7">
+                <h1>Analysis</h1>
+                <div class="row">
+
+
+                    <div class="col-sm-12">
+                        <img src="./Resources/assets/images/Fig1.png" width="50%" align="left" alt="Graph">
+                        <p class="card-text">
+                            This analysis focuses on the impact of latitude on 4 different factors: max temperature, humidity, cloudiness, and wind speed.
+                            Four different graphs were created to illustrate these relationships <br>                            <br>Links
+                            to individual graphs can be found under "Plots" in the navigation bar above. Additionally, click
+                            "Comparison" to see all 4 graphs side by side and "Data" to see the raw data used. To get back
+                            to the homepage, just click "Latitude"
+                            <br><br>The data was updated as of 1/5/17 and pulled from the OpenWeatherMap API. The analysis
+                            involved Python coding and Matplotlib for the visualizations
+                        </p>
+                    </div>
+                </div><br><br>
+            </div>
+            <div class="col-sm-5">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Visualizations</h5>
+                        <div class="container">
+                            <img src="./Resources/assets/images/Fig1.png" class="img-fluid float-left" alt="Graph1">
+                            <img src=" ./Resources/assets/images/Fig2.png" class="img-fluid" alt="Graph2">
+                            <img src="./Resources/assets/images/Fig3.png" class="img-fluid float-left" alt="Graph3">
+                            <img src=" ./Resources/assets/images/Fig4.png" class="img-fluid" alt="Graph4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer ">
+        <b>Copyright © 2019 WW</b>
+    </footer>
+
+</body>
+
+</html>

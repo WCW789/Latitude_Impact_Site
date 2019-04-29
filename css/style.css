@@ -1,0 +1,9 @@
+.blank_Div{
+    width: 60px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
